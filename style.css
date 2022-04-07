@@ -53,6 +53,7 @@ body {
     border-radius: 25px;
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .slider input::-moz-range-progress {
