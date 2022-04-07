@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player 🎧</title>
+    <!-- Font amesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="slider">
+                <input class="voice-range" type="range" value="100">
+            </div>
+            <div class="value">100</div>
+        </div>
+
+        <h2 class="title">.</h2>
+
+        <div class="img-container">
+            <img class="cover" src="album/Ending - Isak Danielson.jpg" alt="music image">
+        </div>
+
+        <div class="proccess-container">
+            <div class="proccess"></div>
+        </div>
+
+        <audio class="audio" src="musics/Ending - Isak Danielson.mp3"></audio>
+
+        <div class="navigation">
+            <button class="prev audio-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button class="play audio-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="next audio-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
