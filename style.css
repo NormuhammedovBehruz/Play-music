@@ -114,7 +114,7 @@ body {
 }
 
 .proccess-container {
-    width: 100%;
+    width: 300px;
     background-color: #fff;
     height: 5px;
     border-radius: 8px;
@@ -133,10 +133,26 @@ body {
     gap: 10px;
 }
 
+.prev {
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .audio-btn {
     border: 0;
     background: transparent;
     font-size: 2rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.next {
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -147,4 +163,11 @@ body {
 
 .fas {
     color: #fff;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
 }

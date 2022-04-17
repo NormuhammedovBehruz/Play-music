@@ -8,6 +8,10 @@ const prevEl = document.querySelector('.prev')
 const playEl = document.querySelector('.play')
 const nextEl = document.querySelector('.next')
 const voiceRange = document.querySelector('.voice-range')
+const start = document.querySelector('.start')
+const end = document.querySelector('.end')
+const endTimeMinutes = document.querySelector('.end-time-minutes')
+const endTimeSecondes = document.querySelector('.end-time-secondes')
 const slider = document.querySelector('input')
 const value = document.querySelector('.value')
 
@@ -89,6 +93,18 @@ function proccess(e) {
     const currentTime = audio.currentTime
     const widthProccess = (currentTime / e.target.duration) * 100
     proccessEl.style.width = `${widthProccess}%`
+
+    let audioDuration = audio.duration
+    let endMinutes = Math.floor(audioDuration / 60)
+    let endSecondes = Math.floor(audioDuration % 60)
+    end.textContent = `${endMinutes}:${(endSecondes = endSecondes < 10 ? '0' + endSecondes : endSecondes)}`
+
+    let startMinutes = Math.floor(currentTime / 60)
+    let startSecondes = Math.floor(currentTime % 60)
+    start.textContent = `${startMinutes}:${(startSecondes = startSecondes < 10 ? '0' + startSecondes : startSecondes)}`
+
+
+
 }
 
 function changeTimeStep(e) {
