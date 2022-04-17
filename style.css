@@ -136,7 +136,7 @@ body {
 .prev {
     border: 0;
     background: transparent;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -144,7 +144,7 @@ body {
 .audio-btn {
     border: 0;
     background: transparent;
-    font-size: 2rem;
+    font-size: 1.9rem;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -152,7 +152,7 @@ body {
 .next {
     border: 0;
     background: transparent;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0.8;
     cursor: pointer;
 }
